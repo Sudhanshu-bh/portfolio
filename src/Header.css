@@ -18,6 +18,10 @@
   border-left: none;
 }
 
+.header a.active {
+  border-bottom: 5px solid rgb(233, 233, 233);
+}
+
 .header.renderBg {
   background: rgba(36, 36, 36, 0.92);
 }
