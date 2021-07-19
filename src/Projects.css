@@ -1,0 +1,10 @@
+.projects {
+  position: relative;
+  padding: 3rem 6rem;
+  z-index: 2;
+  background: rgb(233, 233, 233);
+}
+
+.projects>h2 {
+  font-size: 3rem;
+}

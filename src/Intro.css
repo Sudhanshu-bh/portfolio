@@ -1,0 +1,31 @@
+.intro {
+  background: black;
+  background-image: url("./images/main_bg.png");
+  background-size: contain;
+  background-position: right;
+  background-position-x: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 38vh 6rem;
+  height: 100vh;
+  color: aliceblue;
+}
+
+.intro__text {
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+}
+
+.intro__iam {
+  font-size: 1.9rem;
+}
+
+.intro__name {
+  font-size: 4rem;
+}
+
+.intro__info {
+  font-size: 1.4rem;
+  font-weight: 300;
+}

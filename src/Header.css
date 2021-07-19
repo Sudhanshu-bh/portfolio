@@ -1,0 +1,23 @@
+.header {
+  padding: 0 6rem;
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+.header a {
+  color: rgb(233, 233, 233);
+  text-decoration: none;
+  padding: 2rem;
+  border-left: 1px solid rgb(233, 233, 233);
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.header a:first-of-type {
+  border-left: none;
+}
+
+.header.renderBg {
+  background: rgba(36, 36, 36, 0.92);
+}
