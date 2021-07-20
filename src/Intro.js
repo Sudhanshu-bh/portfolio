@@ -11,7 +11,7 @@ function Intro() {
           <h1 className="intro__name">Sudhanshu.</h1>
           <div className="intro__info">
             <p>Tech enthusiast skilled in technologies like bootstrap, ReactJS, NodeJS and much more.</p>
-            <p>Loves music and workouts besides coding. ✌️</p>
+            <p>Love music and workouts besides coding. ✌️</p>
           </div>
         </div>
       </section>

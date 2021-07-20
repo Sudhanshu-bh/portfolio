@@ -1,0 +1,7 @@
+.about {
+  position: relative;
+  padding: 5rem 6rem;
+  background: lightgreen;
+  color: green;
+  z-index: 2;
+}
