@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
-import ScrollSpy from 'react-scrollspy-navigation'
 
 function Header() {
 
@@ -12,7 +11,7 @@ function Header() {
   const toggleHeaderBg = () => {
     let header = document.getElementById("header")
 
-    if (window.pageYOffset > window.innerHeight - header.offsetHeight) {
+    if (window.pageYOffset > window.innerHeight - header.offsetHeight - 1) {
       setrenderBg("renderBg");
     } else {
       setrenderBg("");
@@ -23,23 +22,19 @@ function Header() {
     const rect = document.getElementById(id).getBoundingClientRect();
     return (rect.top + window.scrollY);
   }
-  function getBottomOffset(id) {
-    const rect = document.getElementById(id).getBoundingClientRect();
-    console.log("innerHeight: ", window.innerHeight)
-    console.log(rect.bottom)
-    return (rect.bottom);
-  }
 
   const toggleActive = () => {
-    if (window.pageYOffset < getTopOffset("projects")) {
+    let header = document.getElementById("header")
+
+    if (window.pageYOffset < getTopOffset("projects") - header.offsetHeight) {
       setintroActive("active")
       setprojectsActive("")
       setcontactActive("")
-    } else if ((window.pageYOffset < getTopOffset("contact")) && (window.innerHeight < getBottomOffset("contact") - 2)) {
+    } else if ((window.pageYOffset < getTopOffset("contact") - header.offsetHeight)) {
       setintroActive("")
       setprojectsActive("active")
       setcontactActive("")
-    } else if (window.innerHeight >= getBottomOffset("contact") - 2) {
+    } else if (window.pageYOffset + header.offsetHeight >= getTopOffset("contact")) {
       setintroActive("")
       setprojectsActive("")
       setcontactActive("active")
@@ -52,14 +47,28 @@ function Header() {
     // eslint-disable-next-line
   }, []);
 
+  const scrollto = (id) => {
+    let header = document.getElementById("header")
+
+    if (id === "projects") {
+      window.scrollTo({
+        top: getTopOffset(id) - header.offsetHeight,
+        behavior: "smooth"
+      })
+    } else {
+      window.scrollTo({
+        top: getTopOffset(id),
+        behavior: "smooth"
+      })
+    }
+  }
+
   return (
     <div className={`header ${renderBg}`} id="header">
-      <ScrollSpy className="active">
-        <a href="#intro" className={introActive}>Home</a>
-        <a href="#projects" className={projectsActive}>Projects</a>
-        <a href="#contact" className={contactActive}>Contact</a>
-      </ScrollSpy>
-    </div>
+      <div onClick={() => scrollto("intro")} className={introActive}>Home</div>
+      <div onClick={() => scrollto("projects")} className={projectsActive}>Projects</div>
+      <div onClick={() => scrollto("contact")} className={contactActive}>Contact</div>
+    </div >
   )
 }
 

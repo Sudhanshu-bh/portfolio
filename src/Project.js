@@ -9,7 +9,11 @@ function Project({ img, title, desc, link, github }) {
       <figcaption>
         <h2>{title}</h2>
         <p>
-          {desc} | <a href={link} target="_blank" rel="noreferrer">View</a>
+          {desc}
+          {link && (
+            <> | <a href={link} target="_blank" rel="noreferrer">View</a>
+            </>
+          )}
           {github && (
             <> | <a className="githubUrl" href={github} target="_blank" rel="noreferrer">Github</a>
             </>

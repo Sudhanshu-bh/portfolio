@@ -7,12 +7,14 @@ function Footer() {
     <Fade>
       <section className="footer" id="contact">
         <div className="footer__email">
-          <a href="mailto:bsudhanshu3@gmail.com">SEND AN EMAIL</a>
+          <Fade right>
+            <a href="mailto:bsudhanshu3@gmail.com">SEND AN EMAIL</a>
+          </Fade>
         </div>
         <div className="footer__info">
           <div className="footer__links">
             <a href="https://www.linkedin.com/in/sudhanshu-bh/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://www.instagram.com/shikari.5/" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://github.com/Sudhanshu-bh" target="_blank" rel="noreferrer">Github</a>
           </div>
           <div className="footer__name">&copy; 2021 | Made by Sudhanshu Bhardwaj</div>
         </div>

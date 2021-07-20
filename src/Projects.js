@@ -3,7 +3,7 @@ import './Projects.css'
 import Project from './Project';
 import Fade from 'react-reveal/Fade'
 import amazon_ss from './images/amazon_ss.png'
-import another_ss from './images/another_ss.png'
+import portfolio_ss from './images/portfolio_ss.png'
 
 function Projects() {
   return (
@@ -23,10 +23,11 @@ function Projects() {
 
           <Fade right>
             <Project
-              img={another_ss}
-              title="Another Project"
-              desc="Another project coming soon"
+              img={portfolio_ss}
+              title="Portfolio"
+              desc="Portfolio website made using react.js"
               link="#"
+              github="#"
             />
           </Fade>
         </div>
