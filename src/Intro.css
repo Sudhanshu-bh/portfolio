@@ -1,3 +1,7 @@
+@media screen and (max-width: 599px) {
+  
+}
+
 .intro {
   opacity: 0;
   background: black;
@@ -7,7 +11,7 @@
   background-position-x: 80%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 38vh 6rem;
+  padding: 38vh 7vw;
   height: 100vh;
   color: aliceblue;
 }
