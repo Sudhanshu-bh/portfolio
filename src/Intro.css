@@ -1,7 +1,3 @@
-@media screen and (max-width: 599px) {
-  
-}
-
 .intro {
   opacity: 0;
   background: black;
@@ -11,7 +7,6 @@
   background-position-x: 80%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 38vh 7vw;
   height: 100vh;
   color: aliceblue;
 }
@@ -21,10 +16,17 @@
   transition: 1s;
 }
 
+.intro__innerDiv {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .intro__text {
-  width: 45%;
   position: fixed;
   z-index: 1;
+  width: 60%;
+  padding: 32vh 7vw;
 }
 
 .intro__iam {
@@ -36,6 +38,52 @@
 }
 
 .intro__info {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 300;
+}
+
+.intro__github {
+  color: #3085a3;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(233, 233, 233);
+  font-weight: 400;
+  width: fit-content;
+  padding: 0.4rem 1.8rem;
+  margin-top: 1.6rem;
+  border-radius: 30px;
+}
+
+.intro__github:hover {
+  background: rgb(233, 233, 233);
+  transition: 0.6s;
+}
+
+.intro__github>* {
+  margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 599px) {
+  .intro__innerDiv {
+    padding: 25% 7vw;
+  }
+
+  .intro__text {
+    width: 70%;
+    padding: 0;
+  }
+
+  .intro__iam {
+    font-size: 1.8rem;
+  }
+
+  .intro__name {
+    font-size: 3rem;
+  }
+
+  .intro__info {
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+  }
 }
