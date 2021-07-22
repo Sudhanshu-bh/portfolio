@@ -15,7 +15,7 @@ function Projects() {
             <Project
               img={amazon_ss}
               title="Amazon Clone"
-              desc="A full stack amazon clone made using react.js"
+              desc="Full stack amazon clone made using react.js"
               link="https://fs--clone.web.app/"
               github="https://github.com/Sudhanshu-bh/fs-amazon-clone"
             />
@@ -27,7 +27,7 @@ function Projects() {
               title="Portfolio"
               desc="Portfolio website made using react.js"
               link="#"
-              github="#"
+              github="https://github.com/Sudhanshu-bh/portfolio"
             />
           </Fade>
         </div>
