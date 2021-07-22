@@ -2,8 +2,9 @@
 @media screen and (max-width: 599px) {
   .header {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: rgba(36, 36, 36, 0.98);
+    background: rgb(36, 36, 36);
     color: rgb(233, 233, 233);
     font-size: 2rem;
     padding: 3rem 0;
@@ -30,6 +31,8 @@
     position: fixed;
     top: 0;
     bottom: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
     z-index: 15;
   }
 

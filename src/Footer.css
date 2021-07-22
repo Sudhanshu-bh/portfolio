@@ -28,6 +28,12 @@
   text-decoration: none;
   border-top: 1px solid rgb(233, 233, 233);
   border-bottom: 1px solid rgb(233, 233, 233);
+  display: flex;
+  align-items: center;
+}
+
+.footer__email svg {
+  margin-right: 1rem;
 }
 
 .footer__email a:hover {
@@ -65,10 +71,15 @@
 }
 
 @media only screen and (max-width: 599px) {
+  .footer {
+    height: 60vh;
+    padding-bottom: 1.3rem;
+  }
+
   .footer .footer__email>* {
-    font-size: 2rem;
+    font-size: 1.8rem;
     left: 0;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0.6rem;
   }
 
   .footer__info {
@@ -95,6 +106,5 @@
 
   .footer .footer__name {
     text-align: center;
-    margin-bottom: -0.8rem;
   }
 }
